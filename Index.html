@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap project 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-danger" >
+      <div class="container-fluid container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#menu">Menu</a>
+            </li>
+          </ul>
+          <img
+            src="./Images/logo.png"
+            alt=""
+            height="80px"
+            width="80px"
+            style="margin-left: 3rem; margin-right: 3rem"
+            class="img-fluid d-none d-md-block"
+          />
+
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#specialitems"
+                >Speciality</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Reservation">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#ourteam">Our Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- INTRODUCTION-->
+    <div
+      id="carouselExampleRide"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-inner" id="home">
+        <div class="carousel-item active custom-bg1">
+          <div class="mx-auto custom-mg">
+            <h1
+              class="text-light fw-bold display-1 custom-font-size-md text-center"
+            >
+              Foodee
+            </h1>
+            <h2
+              class="text-center text-light fw-bold display-1 custom-font-size-md"
+            >
+              It's our pleasure to serve!
+            </h2>
+          </div>
+        </div>
+        <div class="carousel-item custom-bg2">
+          <div class="mx-auto custom-mg">
+            <h1
+              class="text-light fw-bold display-1 custom-font-size-md text-center"
+            >
+              Foodee
+            </h1>
+            <h2
+              class="text-center text-light fw-bold display-1 custom-font-size-md"
+            >
+              It's our pleasure to serve!
+            </h2>
+          </div>
+        </div>
+        <div class="carousel-item custom-bg3">
+          <div class="mx-auto custom-mg">
+            <h1
+              class="text-light fw-bold display-1 custom-font-size-md text-center"
+            >
+              Foodee
+            </h1>
+            <h2
+              class="text-center text-light fw-bold display-1 custom-font-size-md"
+            >
+              It's our pleasure to serve!
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--end introduction-->
+
+    <!--hero section start-->
+
+    <div class="container h-50 row mx-auto mt-5">
+      <div class=" col-md-6 mb-5">
+        <h1 class="display-3">We Love <br> Delicious Foods!</h1>
+        <div class="d-flex align-items-center mt-5">
+          <div>
+            <button class="btn btn-danger rounded-5">Explore Menu</button>
+          </div>
+          <div class="m-2">
+            <img
+              src="./Images/hero-player.png"
+              alt=""
+              width="34px"
+              height="30px"
+            />
+            <span class="fw-bold m-2 custom-hover">play video</span>
+          </div>
+        </div>
+
+        <div class="d-flex mt-5 justify-content-around">
+          <div class="custom-border">
+            <div class="text-center mb-2">
+                <img src="./Images/fast-food.png" alt="" height="50px"
+            width="50px" >
+            </div>
+          
+            <h5>Fast Delivery</h5>
+          </div>
+          <div class="custom-border">
+            <div class="text-center mb-2">
+              <img src="./Images/fresh-food.png" alt="" height="50px"
+            width="50px">
+            </div>
+            
+            <h5>Fresh Food</h5>
+          </div>
+          <div class="custom-border">
+            <div class="text-center mb-2">
+                <img src="./Images/support.png" alt="" height="50px"
+            width="50px">
+            </div>
+          
+            <h5>24/7 Support</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- carousel start-->
+      <div class="col-md-6">
+       
+        <div
+        id="carouselExampleRide"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2000"
+        class="col-lg-6 w-50"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active custom-hero-bg1">
+          </div>
+          <div class="carousel-item custom-hero-bg2">
+          </div>
+          <div class="carousel-item custom-hero-bg3">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--hero section end-->
+
+<!-- About page start -->
+<div class="container  row mt-5 p-5" id="about">
+  <div class=" col-lg-6  mx-auto">
+      <!-- Content of the first column -->
+     <img src="./Images/hero-2.jpeg" alt=""   class="img-fluid" width="100%">
+  </div>
+  <div class="col-lg-6 p-4  ">
+
+      <div >
+          <span>About</span>
+          <h3>Welcome to Foodee</h3>
+          <p class="mt-5 span-para">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its orm dolor. lorem Text should turn around and return to its own,  country. A small river named  flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.fg</p>
+      </div>
+      <div class="mx-auto mt-5">
+                  <h4>special Recipe</h4>
+          <div class="row w-100">
+              <div class="col-md-3 recipe-m">
+                  <img src="./Images/hero-1.jpeg" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="col-md-3 recipe-m">
+                  <img src="./Images/hero-1.jpeg" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="col-md-3 recipe-m">
+                  <img src="./Images/hero-1.jpeg" alt="" srcset="" class="img-fluid">
+              </div>
+          </div>
+      </div>    
+  </div>
+</div>
+
+
+<!-- Specialties start -->
+
+<div class="container bg-grey">
+  <div class=" margin-custom">
+    <div>
+       <h6 class="text-center">Specialties</  h6>
+        <h1 class="text-center fw-bold">Special Dishes</h1>
+    </div>
+    <div class="row">
+
+      <div class=" col-md-6">
+        <span class="special-number">01.</span>
+        <div class="speciality-content">
+          <h4 class="text-danger fw-bold">Beef</h4>
+          <span class="fw-bold">Steak Souce</span>
+          <p class="mt-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt provident libero qui eum, corporis esse quos excepturi soluta?</p>
+          <div>
+            <span>&#8377;15:00</span>
+          </div>
+          <div class="mt-3 btn btn-danger rounded-5">Book a Table</div>
+        </div>
+      </div>
+
+      <div class=" col-md-6 mt-5 ">
+       <img src="./Images/steak.jpeg" alt="" class="img-fluid speciality-img">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class=" col-md-6 mt-5 ">
+       <img src="./Images/salmon-zucchini.jpeg" alt="" class="img-fluid speciality-img2">
+      </div>
+      <div class=" col-md-6">
+        <div class="div2-speciality">
+           <span class="special-number2">02.</span>
+        <div class="speciality-content">
+          <h4 class="text-danger fw-bold">Salmon</h4>
+          <span class="fw-bold">Zucchini</span>
+          <p class="mt-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt provident libero qui eum, corporis esse quos excepturi soluta?</p>
+          <div>
+            <span>&#8377; 15:00</span>
+          </div>
+          <div class="mt-3 btn btn-danger rounded-5">Book a Table</div>
+        </div>
+      </div>
+        </div>
+       
+    </div>   
+  </div>
+</div>
+
+<!-- Specialties end -->
+
+<!--Our Menu start-->
+
+<div class="container " id="menu">
+  <div class="custom-mt ">
+    <div class="text-center">
+        <h5 class="text-danger">Specialities</h5>
+        <h1 class="text-dark">Our Menu</h1>
+    </div>
+
+    <div class="mt-5 row">
+        <div class="col-lg-4 mt-5">
+          <h4 class="text-center ">Breakfast</h4>
+
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-4 mt-5">
+          <h4 class="text-center ">Breakfast</h4>
+
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+          
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-4 mt-5">
+          <h4 class="text-center ">Breakfast</h4>
+
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+          
+          <div class="d-flex mt-5 border-bottom border-warning  pb-3 justify-content-around" >
+            <div>
+              <img src="./Images/breakfast-1.jpeg" alt="" width="80" class="img-fluid rounded-circle" >
+            </div>
+             <div class="custom-ml">
+               <h4 class="text-dark-grey">Egg Sandwich</h4>
+               <span class="text-grey">Meat Ball, Mie</span>
+             </div>
+             <span class="custom-ml fs-5 text-grey">&#8377;30</span>  
+          </div>
+
+
+        </div>
+    </div>
+
+    
+  </div>
+
+</div>
+
+<!--Our Menu end-->
+
+
+<!--grid menu-->
+<div class="grid-menu img-fluid">
+  
+  <div class="custom-mt ">
+    <div>
+      <h2 class="text-center mb-5 text-dark fw-bold display-5">Explore Our Menu</h2>
+
+    </div>
+
+      
+      <div class="gridContainer ">
+        <div class="grid1">
+          <img src="./Images/grid_image1.png" alt="menu image"  class="img-fluid"/>
+        </div>
+        <div class="grid2">
+          <img src="./Images/grid_image2.png" alt="menu image" class="img-fluid"/>
+        </div>
+        <div class="grid3">
+          <img src="./Images/grid_image3.png" alt="menu image" class="img-fluid"/>
+        </div>
+        <div class="grid4">
+          <img src="./Images/grid_image4.png" alt="menu image" class="img-fluid"/>
+        </div>
+        <div class="grid5">
+          <img src="./Images/grid_image5.png" alt="menu image" class="img-fluid"/>
+        </div>
+        <div class="grid6">
+          <img src="./Images/grid_image6.png" alt="menu image" class="img-fluid"/>
+        </div>
+        <div class="grid7">
+          <img src="./Images/grid_image7.png" alt="menu image" class="img-fluid"/>
+        </div>
+      </div>
+      
+     
+  </div>
+
+</div>
+ <!--End grid menu  -->
+
+<!-- Restaurent card -->
+<div class="container card-bg ">
+  <div class="text-center custom-mt mb-5">
+    <h2 class="text-danger fw-bold">Why Choose US</h2>
+    <h4 class="text-info fw-bold display-5">Why Choose Our Restaurent</h4>
+  </div>
+ <div >
+      <div class=" row justify-content-around ">
+        <div class="card m-3 col-lg-4" style="width: 18rem">
+          <img src="./Images/greek-salad.jpg" alt="" class="card-img-top">
+          <div class="card-body text-center">
+            <div class="card-title h4">Greek salad</div>
+            <div class="card-text span-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis officiis eius at ullam voluptatibus libero nam aliquid quas sit!</div>
+            <div class="btn btn-primary mt-5">Check Details</div>
+          </div>
+        </div>
+
+        <div class="card m-3 col-lg-4" style="width: 18rem">
+          <img src="./Images/lobster-roll.jpg" alt="" class="card-img-top">
+          <div class="card-body text-center">
+            <div class="card-title h4">Greek salad</div>
+            <div class="card-text span-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis officiis eius at ullam voluptatibus libero nam aliquid quas sit!</div>
+            <div class="btn btn-primary mt-5">Check Details</div>
+          </div>
+        </div>
+        <div class="card m-3 col-lg-4" style="width: 18rem">
+          <img src="./Images/lobster-bisque.jpg" alt="" class="card-img-top">
+          <div class="card-body text-center">
+            <div class="card-title h4">Greek salad</div>
+            <div class="card-text span-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis officiis eius at ullam voluptatibus libero nam aliquid quas sit!</div>
+            <div class="btn btn-primary mt-5">Check Details</div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class=" row justify-content-around ">
+        <div class="card m-3 col-lg-4" style="width: 18rem">
+          <img src="./Images/tuscan-grilled.jpg" alt="" class="card-img-top">
+          <div class="card-body text-center">
+            <div class="card-title h4">Greek salad</div>
+            <div class="card-text span-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis officiis eius at ullam voluptatibus libero nam aliquid quas sit!</div>
+            <div class="btn btn-primary mt-5">Check Details</div>
+          </div>
+        </div>
+
+        <div class="card m-3 col-lg-4" style="width: 18rem">
+          <img src="./Images/mozzarella.jpg" alt="" class="card-img-top">
+          <div class="card-body text-center">
+            <div class="card-title h4">Greek salad</div>
+            <div class="card-text span-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis officiis eius at ullam voluptatibus libero nam aliquid quas sit!</div>
+            <div class="btn btn-primary mt-5">Check Details</div>
+          </div>
+        </div>
+        <div class="card m-3 col-lg-4" style="width: 18rem">
+          <img src="./Images/lobster-bisque.jpg" alt="" class="card-img-top">
+          <div class="card-body text-center">
+            <div class="card-title h4">Greek salad</div>
+            <div class="card-text span-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis officiis eius at ullam voluptatibus libero nam aliquid quas sit!</div>
+            <div class="btn btn-primary mt-5">Check Details</div>
+          </div>
+        </div>
+        
+      </div>
+ </div>
+  
+
+  
+   
+</div>
+
+<!-- Restaurent card end -->
+
+<!-- Yummy item page start-->
+
+<div class="container" id="specialitems">
+  <div class="text-center custom-mt">
+    <h1>Test Our Yummy Items </h1>
+    <div class="mt-4 ">
+      <ul class="menu-list d-flex justify-content-center fs-5">
+        <li class="menu-item ">
+            <a href="#starter" class="menu-link "> Starter</a>
+        </li>
+        <li class="menu-item">
+            <a href="#breakfast" class="menu-link "> Breakfast</a>
+        </li>
+        <li class="menu-item">
+            <a href="#lunch" class="menu-link "> Lunch</a>
+        </li>
+        <li class="menu-item">
+            <a href="#dinner" class="menu-link "> Dinner</a>
+        </li>
+     </ul>
+    </div>
+  </div>
+
+<div class="row justify-content-center">
+  <h3 class="mt-5 text-center text-danger display-4">Our Starter</h3>
+  <div style="width: 18rem;" class="mt-5 col-lg-4  yummy-item-gap">
+    <img class="card-img-top" src="./Images/menu-item-1.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4 yummy-item-gap">
+    <img class="card-img-top" src="./Images/menu-item-2.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4 yummy-item-gap">
+    <img class="card-img-top" src="./Images/menu-item-3.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+</div>
+  
+<div class="row justify-content-center">
+  <h3 class="mt-5 text-center text-danger display-4">Our Breakfast</h3>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4  yummy-item-gap">
+    <img class="card-img-top" src="./Images/menu-item-4.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4 yummy-item-gap">
+    <img class="card-img-top" src="./Images/menu-item-5.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4 yummy-item-gap">
+    <img class="card-img-top" src="./Images/menu-item-6.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <h3 class="mt-5 text-center text-danger display-4">Our Lunch</h3>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4  yummy-item-gap">
+    <img class="card-img-top" src="./Images/bread-barrel.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4 yummy-item-gap">
+    <img class="card-img-top" src="./Images/cake.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4 yummy-item-gap">
+    <img class="card-img-top" src="./Images/lobster-bisque.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <h3 class="mt-5 text-center text-danger display-4">Our Dinner</h3>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4  yummy-item-gap">
+    <img class="card-img-top" src="./Images/lobster-roll.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4 yummy-item-gap">
+    <img class="card-img-top" src="./Images/mozzarella.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+
+  <div style="width: 18rem;" class="mt-5 col-lg-4 yummy-item-gap">
+    <img class="card-img-top" src="./Images/lobster-bisque.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-center">Magnam Tiste</h3>
+      <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
+      <div class="text-center display-6">	&#8377;750</div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Yummy item page end -->
+
+
+<!-- Restaurent staff start-->
+
+<div class="container mt-5" id="ourteam">
+  <div class="mt-5 text-center">
+      <h6 class="text-danger">Specialities</h6>
+      <h1 class="display-5">Our Team</h1>
+  </div>
+
+  <div class="row mx-auto d-flex justify-content-center align-items-center mt-5">
+    <div class="col-md-4 mt-4 d-flex flex-column align-items-center position-relative">
+      <img src="https://demos.freehtml5.co/resto/img/chef-1.jpg" alt="" class="img-fluid">
+      <div class="bg-light custom-mw  position-absolute text-dark text-center">
+          <h4>Aaron Patel</h4>
+          <span class="text-danger">CEO</span>
+      </div>
+    </div>
+    <div class="col-md-4 mt-4 d-flex flex-column align-items-center position-relative">
+      <img src="https://demos.freehtml5.co/resto/img/chef-2.jpg" alt="" class="img-fluid">
+      <div class="bg-light custom-mw  position-absolute text-dark text-center">
+          <h4>Daniel Tebas</h4>
+          <span class="text-danger">Chef</span>
+      </div>
+    </div>
+    <div class="col-md-4 mt-4 d-flex flex-column align-items-center position-relative">
+      <img src="https://demos.freehtml5.co/resto/img/chef-3.jpg" alt="" class="img-fluid">
+      <div class="bg-light custom-mw  position-absolute text-dark text-center">
+          <h4>Jon Snow</h4>
+          <span class="text-danger">Chef</span>
+      </div>
+    </div>
+    
+     
+      
+  </div>
+</div>
+
+<!-- Restaurent staff end-->
+
+<!-- BOOK A TABLE START-->
+
+<div class="container " id="Reservation">
+  <div class="text-center custom-mt ">
+    <h5>BOOK A TABLE</h5>
+    <h2>Book Your Stay With Us</h2>
+  </div>
+  <div class="mt-5 row " style="background-color: rgba(55, 55, 63, 0.04);">
+    <div class="col-lg-6">
+      <img src="https://i.pinimg.com/564x/1a/db/50/1adb500b1a8a1c929b536f4dae46ca4a.jpg" alt="" width="90%" height="89%" class="img-fluid">
+    </div>
+    <div class="col-lg-6 mt-5 ">
+      <div class="mb-3 row mt-3">
+      
+       
+        <div class="col-lg-4 mt-3"> 
+          <input type="email" class="form-control   " id="exampleFormControlInput1" placeholder="Your Email" style=" padding-left: 1rem;">
+        </div>
+        <div class="col-lg-4 mt-3"> 
+          <input type="email" class="form-control   " id="exampleFormControlInput1" placeholder="Your Email" style=" padding-left: 1rem;">
+        </div>
+    
+        <div class="col-lg-4 mt-3">
+          <input type="text" class="form-control   " id="exampleFormControlInput1" placeholder="Your Phone" style=" padding-left: 1rem;">
+        </div>
+        
+      </div>
+      <div class="mb-3 row mt-3">
+        <div class="col-lg-4 mt-3">
+             <input type="text" class="form-control   " id="exampleFormControlInput1" placeholder="Date" style=" padding-left: 1rem;">
+        </div>
+      
+        <div class="col-lg-4 mt-3">
+            <input type="text" class="form-control   " id="exampleFormControlInput1" placeholder="Time" style=" padding-left: 1rem;">
+        </div>
+       
+        <div class="col-lg-4 mt-3">
+          <input type="text" class="form-control   " id="exampleFormControlInput1" placeholder="People" style="padding-left: 1rem;">
+        </div>
+       
+      </div>
+      <div class="mb-3 row mt-3">
+        <textarea class="form-control " id="exampleFormControlTextarea1" placeholder="Message" rows="7"></textarea>
+      
+      </div>
+      <div class="btn btn-danger rounded-5 d-flex justify-content-center mt-3">Book A Table</div>
+    </div>
+    
+  </div>
+  
+</div>
+
+<!-- BOOK A TABLE END-->
+
+<!-- footer -->
+
+<div class="container my-5">
+  
+  <footer
+          class="text-center text-lg-start text-dark"
+         
+          >
+    <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: #21D192"
+             >
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+
+      <div>
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+
+    <section >
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">About Our Restaurent</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p class="custom-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ad expedita aperiam. Modi atque ullam architecto asperiores, dignissimos ipsam tenetur.
+            </p>
+          </div>
+
+
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold">FAMOUS DISHES</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <span href="#!" class="text-dark">Magnam Tiste</span>
+            </p>
+            <p>
+              <span href="#!" class="text-dark">Magnam Tiste</span>
+            </p>
+            <p>
+              <span href="#!" class="text-dark">Magnam Tiste</span>
+            </p>
+            <p>
+              <span href="#!" class="text-dark">Magnam Tiste </span>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold">WORKING HOURS</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <span href="#!" class="text-dark">Mon-Thu : 8am - 9pm</span>
+            </p>
+            <p>
+              <span href="#!" class="text-dark">Fri-Sat : 8am - 1am</span>
+            </p>
+            <p>
+              <span href="#!" class="text-dark">Sunday : 8am - 10pm</span>
+            </p>
+            
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <h6 class="text-uppercase fw-bold">Contact US</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                
+            <p><i class="fas fa-home mr-3"></i> Jagiroad Morigaon Assam</p>
+            <p><i class="fas fa-envelope mr-3"></i> rupmedhi23@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91 7099 2379 39</p>
+            <p><i class="fas fa-print mr-3"></i> + 91 7099 2379 39</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center p-3" >© 2023 Copyright:Rup Medhi</div>
+        
+  </footer>
+
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
